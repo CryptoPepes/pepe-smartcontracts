@@ -1,0 +1,30 @@
+{
+  "name": "cryptopepe-smartcontracts",
+  "version": "0.1.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MickdeGraaf/cryptopepe-smartcontracts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MickdeGraaf/cryptopepe-smartcontracts/issues"
+  },
+  "homepage": "https://github.com/MickdeGraaf/cryptopepe-smartcontracts#readme",
+  "dependencies": {
+    "leftpad": "0.0.1",
+    "openzeppelin-solidity": "1.12.0",
+    "sha3": "^1.2.2",
+    "truffle-hdwallet-provider": "0.0.6",
+    "web3-eth": "^1.0.0-beta.36",
+    "web3-utils": "^1.0.0-beta.36"
+  }
+}
