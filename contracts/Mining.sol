@@ -27,6 +27,9 @@ contract Mining is Beneficiary {
     uint public _MINIMUM_TARGET = 2**16;
     uint public _MAXIMUM_TARGET = 2**250; //Testing setting!
     //uint public _MAXIMUM_TARGET = 2**230; //SHOULD MAKE THIS HARDER IN PRODUCTION
+
+    uint public constant STARTING_DIFFICULTY = 0x00000000000b4963208fc24a4a15e9ea7c1556f9583f1941a7515fabbd194584;
+
     bytes32 public challengeNumber;
     uint public difficulty;
     uint public MINING_RATE_FACTOR = 31; //mint the token 31 times less often than ether
@@ -58,7 +61,7 @@ contract Mining is Beneficiary {
         pepeContract = PepeBase(_pepeContract);
         pepToken = PepToken(_pepToken);
         pepeGrinder = PepeGrinder(_pepeGrinder);
-        difficulty = _MAXIMUM_TARGET;
+        difficulty = STARTING_DIFFICULTY;
         miningStart = _miningStart;
     }
 
