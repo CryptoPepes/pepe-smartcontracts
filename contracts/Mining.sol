@@ -62,11 +62,6 @@ contract Mining is Beneficiary {
         miningStart = _miningStart;
     }
 
-    ///TEMP METHOD FOR TESTING!!!!
-    function setDifficulty(uint256 _difficulty) public {
-        difficulty = _difficulty;
-    }
-
     /**
      * Mint a new pepe if noce is correct
      * @param nonce The nonce to submit
